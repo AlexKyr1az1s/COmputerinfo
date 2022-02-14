@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Computer Info</h1>
+
+<h2>Computer name: <span th:text="${computer.name}"></span></h2>
+<h2>Computer processor: <span th:text="${computer.getCpu()}"></span></h2>
+<h2>Computer OS: <span th:text="${computer.getOs()}"></span></h2>
+<h2>Computer Release: <span th:text="${computer.getOsRelease()}"></span></h2>
+<h2>Computer version: <span th:text="${computer.getOsVersion()}"></span></h2>
+<h2>Computer Memory: <span th:text="${computer.getMemory()}"></span></h2>
+
+</body>
+</html>
